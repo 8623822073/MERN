@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="signup.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <div class="registration-box" id="signup">
+        <h2>Student Registration</h2>
+        <form action="/submit_student_registration" method="POST">
+            <div class="user-box">
+                <input type="text" name="student_id" required>
+                <label>Student ID</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="full_name" required>
+                <label>Full Name</label>
+            </div>
+            <div class="user-box">
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+            <div class="user-box">
+                <input type="date" name="dob" required>
+                <label></label>
+            </div>
+            <div class="user-box">
+                <select name="course" required>
+                    <option value="" >Select Course</option>
+                    <option value="computer_science">Computer Science</option>
+                    <option value="business_administration">Business Administration</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="arts">Arts</option>
+                </select>
+                <label></label>
+            </div>
+            <button type="submit">
+                Register
+                <span></span><span></span><span></span><span></span>
+            </button>
+        </form>
+    </div>
+</body>
+</html>
